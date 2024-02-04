@@ -1,0 +1,46 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<main class="main">
+  <div class="content">
+    <!-- app.component.html -->
+    <h1 class="display-3 text-center">Ice Broken</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/OIG3.jpg" alt="A colorful abstract painting" class="img-fluid img-thumbnail float-left mr-3">
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3> <p class="lead text-center mb-3">Welcome to Ice Broken, a game that helps facilitate ice breaking conversations with your colleagues. The game is simple: just click the go button and you will see a random question that you can answer out loud to the rest of the participants. Take turns and have fun learning more about each other!</p></h3>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title" id="question-text">Question: {{question}}</h5>
+            </div>
+          </div>
+          <app-go-button label="Go" (buttonClicked)="generateQuestion()"></app-go-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />
